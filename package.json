@@ -9,6 +9,7 @@
     "init:files": "touch README.md src/index.html src/index.js src/main.scss webpack.common.js webpack.dev.js webpack.prod.js api/db.json",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "init:gitignore:custom": "echo \"dist\" >> .gitignore",
+    "dev": "webpack serve --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {

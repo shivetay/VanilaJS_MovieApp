@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: $font-family;
+  // color: $color-font-light;
+  // background: $color-main-opa;
+}
+
+html {
+  box-sizing: border-box;
+  /* 1rem = 10px; 16px - base font size  10px/16px = 62.5% */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include respond(desktop-small) {
+    font-size: 50%; // 1rem = 8px
+  }
+  @include respond(tab-port) {
+    font-size: 44%; // 1rem = 7px
+  }
+  @include respond(phone) {
+    font-size: 37%; // 1rem = 6px
+  }
+}

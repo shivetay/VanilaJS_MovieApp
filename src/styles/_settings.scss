@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+/* colors */
+// $color-main: #153025;
+// $color-dark: #052e1c;
+// $color-dark-alt: #1a402f;
+// $color-light: #338763;
+// $color-alt: #6a0136;
+// $color-alt-opa: #6a013691;
+// $color-main-opa: #153025d2;
+// $color-dark-opa: #052e1c6c;
+// $color-light-opa: #338763a4;
+// $color-dark-trans: #052e1c0a;
+
+// $color-font-light: #fffefe;
+
+// $color-btn: #bfab25;
+// $color-btn-opa: #bfaa2500;
+
+/* fonts */
+$font-family: 'Roboto', sans-serif;
+
+$font-small: 1.2rem;
+$font-medium: 1.4rem;
+$font-normal: 1.6rem;
+$font-large: 1.8rem;
+$font-big: 2rem;
+
+$header-h1: 2.8rem;
+$header-h2: 2.6rem;
+$header-h3: 2.4rem;
+$header-h4: 2.2rem;
+
+$font-family: 'Roboto', sans-serif;
+
+/* Brakepoints */
+$bp-xldesktop: 120em; // 1900px/16 = 125em rozdzielczosc/16px
+$bp-ldesktop: 100em; // 1600px/16 = 100em rozdzielczosc/16px
+// $bp-ldesktop: 88em; // 1400px/16 = 87,5em rozdzielczosc/16px
+$bp-desktop: 75em; // 1200px/16 = 75em rozdzielczosc/16px
+$bp-deskot-small: 63em; // 1000px/16
+$bp-tablet-landscape: 56em; // 900px
+$bp-tablet-portrait: 48em; // 767px
+$bp-phone: 37em; // 599px
+$bp-xsmall: 31em; // < 500px
+$bp-xxsmall: 22.5em; // < 360px
