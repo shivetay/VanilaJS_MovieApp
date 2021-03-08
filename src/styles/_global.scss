@@ -7,8 +7,9 @@
 }
 body {
   font-family: $font-family;
-  // color: $color-font-light;
-  // background: $color-main-opa;
+  color: $color-font-light;
+  background: $color-main;
+  overflow-x: hidden;
 }
 
 html {
@@ -26,4 +27,43 @@ html {
   @include respond(phone) {
     font-size: 37%; // 1rem = 6px
   }
+}
+
+img {
+  width: 100%;
+  height: 60%;
+  padding: 6px;
+  border-radius: 10px;
+}
+h3 {
+  font-size: $header-h3;
+  text-align: center;
+}
+
+i {
+  font-size: $header-h2;
+  padding: 2px 5px;
+  margin: 0 8px;
+  cursor: pointer;
+  color: $color-font-light;
+  transition: all 0.5s ease-in;
+}
+
+i:hover {
+  color: $color-alt;
+  transform: scale(1.2);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: $color-second;
+  width: 30rem;
+  height: 45rem;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+  margin: 5px 15px;
+  flex: 1 0 21%;
 }

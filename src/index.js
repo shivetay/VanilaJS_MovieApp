@@ -1,6 +1,7 @@
 'use strict';
 
 import './main.scss';
+
 const app = {
   /* app init */
   init: function () {
