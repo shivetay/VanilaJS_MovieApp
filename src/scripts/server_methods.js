@@ -11,7 +11,6 @@ export const getMovies = async (page) => {
     if (res.status === 200) {
       const data = await res.json();
       const allMovies = new UI(data.results);
-      console.log(res);
       return allMovies;
     } else {
       console.log(res.status);

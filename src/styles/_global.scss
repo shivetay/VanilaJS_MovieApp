@@ -37,6 +37,16 @@ img {
 h3 {
   font-size: $header-h3;
   text-align: center;
+
+  @include respond(desktop-small) {
+    // font-size: 50%; // 1rem = 8px
+  }
+  @include respond(tab-port) {
+    font-size: $header-h4;
+  }
+  @include respond(phone) {
+    font-size: $font-big;
+  }
 }
 
 i {
@@ -85,15 +95,19 @@ i:hover {
   background: none;
   border: none;
   padding: 2rem;
+  margin: 0 4rem;
   transition: all 0.5s;
   color: $color-font-light;
   border-radius: 5px;
   width: 10rem;
   height: 5rem;
+  backdrop-filter: blur(2px);
+  background-color: $color-btn;
 }
 .btn:hover {
   cursor: pointer;
   background-color: $color-alt;
+  backdrop-filter: blur(2px);
   transform: scale(1.1);
 }
 
