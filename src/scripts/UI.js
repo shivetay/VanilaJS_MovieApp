@@ -2,20 +2,22 @@ class UI {
   constructor(data) {
     const thisUI = this;
     thisUI.data = data;
-    thisUI.movie = document.querySelector('.movies');
+
     thisUI.renderMovies(data);
   }
-
+  // ${this.renderRatingColor(vote_average)}
   renderMovies(data) {
     const thisUI = this;
+    thisUI.movie = document.querySelector('.movies');
+    const img_path = 'https://image.tmdb.org/t/p/w1280';
     let output = '';
     for (let movie of data) {
-      const { original_title } = movie;
+      const { original_title, poster_path, overview, vote_average } = movie;
       output += `
-      <div class='card'>
+      <div class='card ${this.renderRatingColor(vote_average)}'>
         <h3 class='movie__title'>${original_title}</h3>
         <img
-          src='https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
+          src='${img_path + poster_path}'
           alt='movie_photo'
           class='movie__img'
         />
@@ -28,7 +30,18 @@ class UI {
     }
     thisUI.movie.innerHTML = output;
   }
+
+  renderRatingColor(vote) {
+    if (vote <= 2) {
+      return 'low';
+    } else if (vote <= 5 && vote >= 2) {
+      return 'med';
+    } else if (vote >= 7 && vote <= 5) {
+      return 'good';
+    } else {
+      return 'best';
+    }
+  }
 }
 
-// export const ui = new UI();
 export default UI;

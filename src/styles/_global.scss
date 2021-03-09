@@ -30,7 +30,6 @@ html {
 }
 
 img {
-  width: 100%;
   height: 60%;
   padding: 6px;
   border-radius: 10px;
@@ -60,10 +59,24 @@ i:hover {
   justify-content: space-evenly;
   flex-direction: column;
   background-color: $color-second;
-  width: 30rem;
-  height: 45rem;
+  width: 10rem;
+  height: 40rem;
   border-radius: 5px;
   backdrop-filter: blur(2px);
   margin: 5px 15px;
   flex: 1 0 21%;
+}
+
+/* helper classes */
+.low {
+  background: linear-gradient(to bottom right, $color-low, $color-alt-opa);
+}
+.med {
+  background: linear-gradient(to bottom right, $color-med, $color-alt-opa);
+}
+.good {
+  background: linear-gradient(to bottom right, $color-good, $color-alt-opa);
+}
+.best {
+  background: linear-gradient(to bottom right, $color-best, $color-alt-opa);
 }

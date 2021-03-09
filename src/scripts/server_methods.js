@@ -1,7 +1,6 @@
 import UI from './UI';
 
 const key = '3587a3fa0e0740b636671ff686bf592b';
-const img_path = 'https://image.tmdb.org/t/p/w1280';
 
 export const getMovies = async () => {
   try {
