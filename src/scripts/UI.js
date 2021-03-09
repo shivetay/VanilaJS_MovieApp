@@ -5,7 +5,7 @@ class UI {
 
     thisUI.renderMovies(data);
   }
-  // ${this.renderRatingColor(vote_average)}
+
   renderMovies(data) {
     const thisUI = this;
     thisUI.movie = document.querySelector('.movies');

@@ -53,6 +53,13 @@ i:hover {
   transform: scale(1.2);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .card {
   display: flex;
   align-items: center;
@@ -65,6 +72,29 @@ i:hover {
   backdrop-filter: blur(2px);
   margin: 5px 15px;
   flex: 1 0 21%;
+}
+
+.pagination {
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  background: none;
+  border: none;
+  padding: 2rem;
+  transition: all 0.5s;
+  color: $color-font-light;
+  border-radius: 5px;
+  width: 10rem;
+  height: 5rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: $color-alt;
+  transform: scale(1.1);
 }
 
 /* helper classes */
