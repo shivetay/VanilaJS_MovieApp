@@ -2,4 +2,6 @@
 
 This is a Vanila JS movie app. I am using here [The Movie Database API](https://developers.themoviedb.org/). General idea was to practice JS.
 
-[Movie App]()
+## Demo
+
+[Movie App](https://shivetay.github.io/VanilaJS_MovieApp/public/index.html)
