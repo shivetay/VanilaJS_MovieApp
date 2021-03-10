@@ -15,15 +15,20 @@ class UI {
       const { original_title, poster_path, overview, vote_average } = movie;
       output += `
       <div class='card ${this.renderRatingColor(vote_average)}'>
-        <h3 class='movie__title'>${original_title}</h3>
+        <h3 class='movies__title'>${original_title}</h3>
+        <div class="movies__overview">
+          <h3 class="movies__overview-header">Overview</h3>
+          <p class="movies__overview-text">${overview}</p>
+        </div>
         <img
           src='${img_path + poster_path}'
           alt='movie_photo'
-          class='movie__img'
+          class='movies__img'
         />
-        <div class='movie__icons'>
+        <div class='movies__icons'>
           <i class='fas fa-film'></i>
           <i class='fas fa-grin-hearts'></i>
+          <span class='vote'>${vote_average}</span>
         </div>
       </div>
       `;
@@ -36,7 +41,7 @@ class UI {
       return 'low';
     } else if (vote <= 5 && vote >= 2) {
       return 'med';
-    } else if (vote >= 7 && vote <= 5) {
+    } else if (vote <= 8 && vote >= 5) {
       return 'good';
     } else {
       return 'best';

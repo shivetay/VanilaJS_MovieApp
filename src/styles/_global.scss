@@ -49,18 +49,27 @@ h3 {
   }
 }
 
-i {
-  font-size: $header-h2;
+i,
+span {
   padding: 2px 5px;
   margin: 0 8px;
-  cursor: pointer;
+
   color: $color-font-light;
+}
+
+i {
+  font-size: $header-h2;
+  cursor: pointer;
   transition: all 0.5s ease-in;
 }
 
 i:hover {
   color: $color-alt;
   transform: scale(1.2);
+}
+
+span {
+  font-size: $font-large;
 }
 
 .container {
@@ -87,6 +96,32 @@ i:hover {
 .pagination {
   margin: 2rem;
   padding: 1rem;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid $color-btn;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: $color-font-dark;
+  background-color: $color-font-light;
+}
+
+.search::placeholder {
+  color: $color-font-dark;
+}
+
+.search:focus {
+  outline: none;
+  background-color: $color-font-light;
 }
 
 .btn {

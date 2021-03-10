@@ -7,9 +7,44 @@
   height: 100%;
   margin: 10px auto;
 
+  &__overview {
+    position: absolute;
+    background-color: $color-second;
+    padding: 2rem;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    top: 50%;
+    left: 0;
+    max-width: 100%;
+    transform: translateY(15%);
+    transition: all 0.4s ease-in;
+
+    &-header {
+      color: $color-font-dark;
+      font-weight: 700;
+    }
+
+    &-text {
+      font-size: $font-medium;
+      margin: 2rem 0;
+      color: $color-font-dark;
+      font-weight: 700;
+      text-align: justify;
+    }
+  }
+
   &__icons {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__title:hover {
+    cursor: pointer;
+  }
+
+  &__title:hover + .movies__overview {
+    opacity: 1;
+    transform: translateY(-50%);
   }
 }
